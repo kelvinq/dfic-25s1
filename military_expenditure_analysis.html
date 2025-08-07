@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Military Expenditure Analysis - Defense Finance Professional Training</title>
+    <title>Military Expenditure Analysis - Defence Finance Professional Training</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -66,13 +66,13 @@
     <div class="container mx-auto px-4 py-8">
         <header class="text-center mb-12">
             <h1 class="text-4xl font-bold mb-4 text-indigo-900">Military Expenditure Analysis</h1>
-            <p class="text-lg text-gray-600">Defense Finance Professional Training Dataset</p>
+            <p class="text-lg text-gray-600">Defence Finance Professional Training Dataset</p>
             <p class="text-sm text-gray-500">Based on World Bank data (1970-2020)</p>
         </header>
 
-        <!-- 1. Cold War Defense Spending Timeline -->
+        <!-- 1. Cold War Defence Spending Timeline -->
         <div class="section">
-            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">1. Cold War Defense Spending Timeline (1973-1991)</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">1. Cold War Defence Spending Timeline (1973-1991)</h2>
             <div class="chart-container">
                 <div class="controls">
                     <button class="btn active" onclick="updateColdWarPeriod('full')">Full Period</button>
@@ -85,31 +85,31 @@
             </div>
         </div>
 
-        <!-- 2. Post-9/11 Defense Surge Analysis -->
+        <!-- 2. Post-9/11 Defence Surge Analysis -->
         <div class="section">
-            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">2. Post-9/11 Defense Surge Analysis (2000-2010)</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">2. Post-9/11 Defence Surge Analysis (2000-2010)</h2>
             <div class="chart-container">
                 <canvas id="post911Chart" width="800" height="300"></canvas>
             </div>
             <div class="insight-box">
-                <strong>Historical Context:</strong> US defense spending more than doubled from $332B to $738B following 9/11, representing the largest military expansion since WWII.
+                <strong>Historical Context:</strong> US defence spending more than doubled from $332B to $738B following 9/11, representing the largest military expansion since WWII.
             </div>
         </div>
 
-        <!-- 3. Financial Crisis Impact on Defense -->
+        <!-- 3. Financial Crisis Impact on Defence -->
         <div class="section">
-            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">3. Financial Crisis Impact on Defense (2008-2012)</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">3. Financial Crisis Impact on Defence (2008-2012)</h2>
             <div class="chart-container">
                 <canvas id="financialCrisisChart" width="800" height="300"></canvas>
             </div>
             <div class="insight-box">
-                <strong>Economic Impact:</strong> Most countries maintained or increased defense spending during 2008-2012, showing defense spending's counter-cyclical nature during economic downturns.
+                <strong>Economic Impact:</strong> Most countries maintained or increased defence spending during 2008-2012, showing defence spending's counter-cyclical nature during economic downturns.
             </div>
         </div>
 
-        <!-- 4. Regional Defense Burden Comparison -->
+        <!-- 4. Regional Defence Burden Comparison -->
         <div class="section">
-            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">4. Regional Defense Burden Comparison (2020)</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">4. Regional Defence Burden Comparison (2020)</h2>
             <div class="chart-container">
                 <div class="controls">
                     <button class="btn active" onclick="updateRegionalView('absolute')">Absolute Spending</button>
@@ -130,9 +130,9 @@
             </div>
         </div>
 
-        <!-- 6. Income Level Defense Priorities -->
+        <!-- 6. Income Level Defence Priorities -->
         <div class="section">
-            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">6. Defense Spending by Income Level (2020)</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">6. Defence Spending by Income Level (2020)</h2>
             <div class="chart-container">
                 <canvas id="incomeLevelChart" width="800" height="300"></canvas>
             </div>
@@ -140,15 +140,15 @@
 
         <!-- 7. Major Powers Spending Evolution -->
         <div class="section">
-            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">7. Major Powers Defense Evolution (1990-2020)</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">7. Major Powers Defence Evolution (1990-2020)</h2>
             <div class="chart-container">
                 <canvas id="majorPowersChart" width="800" height="300"></canvas>
             </div>
         </div>
 
-        <!-- 8. Defense Spending Efficiency Matrix -->
+        <!-- 8. Defence Spending Efficiency Matrix -->
         <div class="section">
-            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">8. Defense Spending Efficiency Matrix (2020)</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">8. Defence Spending Efficiency Matrix (2020)</h2>
             <div class="chart-container">
                 <canvas id="efficiencyMatrix" width="800" height="300"></canvas>
             </div>
@@ -156,7 +156,7 @@
 
         <!-- 9. Government Budget Allocation -->
         <div class="section">
-            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">9. Defense as % of Government Expenditure (Top 20)</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-indigo-800">9. Defence as % of Government Expenditure (Top 20)</h2>
             <div class="chart-container">
                 <canvas id="govSpendingChart" width="800" height="300"></canvas>
             </div>
@@ -302,7 +302,7 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Cold War Defense Spending (% of GDP)',
+                        text: 'Cold War Defence Spending (% of GDP)',
                         font: { size: 16 }
                     },
                     legend: {
@@ -367,7 +367,7 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Defense Spending Surge After 9/11',
+                        text: 'Defence Spending Surge After 9/11',
                         font: { size: 16 }
                     }
                 }
@@ -406,20 +406,20 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Defense Spending During Financial Crisis (% GDP)',
+                        text: 'Defence Spending During Financial Crisis (% GDP)',
                         font: { size: 16 }
                     }
                 }
             }
         });
 
-        // 4. Regional Defense Burden
+        // 4. Regional Defence Burden
         let regionalBurdenChart = new Chart(document.getElementById('regionalBurdenChart'), {
             type: 'doughnut',
             data: {
                 labels: militaryData.regions.names,
                 datasets: [{
-                    label: 'Defense Spending (Billions USD)',
+                    label: 'Defence Spending (Billions USD)',
                     data: militaryData.regions.spending,
                     backgroundColor: [
                         'rgba(59, 130, 246, 0.8)',
@@ -437,7 +437,7 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Regional Defense Spending Distribution (2020)',
+                        text: 'Regional Defence Spending Distribution (2020)',
                         font: { size: 16 }
                     }
                 }
@@ -450,7 +450,7 @@
             data: {
                 labels: [...militaryData.nato.above2, ...militaryData.nato.below2],
                 datasets: [{
-                    label: 'Defense Spending (% GDP)',
+                    label: 'Defence Spending (% GDP)',
                     data: [...militaryData.nato.spending2020, ...militaryData.nato.spendingBelow],
                     backgroundColor: function(context) {
                         return context.parsed.y >= 2 ? 'rgba(34, 197, 94, 0.8)' : 'rgba(239, 68, 68, 0.8)';
@@ -476,7 +476,7 @@
                     x: {
                         title: {
                             display: true,
-                            text: 'Defense Spending (% of GDP)'
+                            text: 'Defence Spending (% of GDP)'
                         }
                     }
                 }
@@ -528,7 +528,7 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Defense Spending by Income Level (2020)',
+                        text: 'Defence Spending by Income Level (2020)',
                         font: { size: 16 }
                     }
                 }
@@ -577,7 +577,7 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Major Powers Defense Spending Evolution (Billions USD)',
+                        text: 'Major Powers Defence Spending Evolution (Billions USD)',
                         font: { size: 16 }
                     }
                 },
@@ -585,7 +585,7 @@
                     y: {
                         title: {
                             display: true,
-                            text: 'Defense Spending (Billions USD)'
+                            text: 'Defence Spending (Billions USD)'
                         }
                     }
                 }
@@ -626,7 +626,7 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Defense Spending Efficiency Matrix (2020)',
+                        text: 'Defence Spending Efficiency Matrix (2020)',
                         font: { size: 16 }
                     }
                 },
@@ -640,7 +640,7 @@
                     y: {
                         title: {
                             display: true,
-                            text: 'Defense Burden (% of GDP)'
+                            text: 'Defence Burden (% of GDP)'
                         }
                     }
                 }
@@ -653,7 +653,7 @@
             data: {
                 labels: ['Saudi Arabia', 'Israel', 'USA', 'Russia', 'South Korea', 'Algeria', 'Kuwait', 'Azerbaijan', 'UAE', 'Oman'],
                 datasets: [{
-                    label: 'Defense % of Government Expenditure',
+                    label: 'Defence % of Government Expenditure',
                     data: [22.1, 16.4, 11.2, 11.7, 9.8, 12.3, 14.2, 13.8, 15.1, 16.9],
                     backgroundColor: 'rgba(168, 85, 247, 0.7)'
                 }]
@@ -665,7 +665,7 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Defense as % of Government Expenditure (Top 10)',
+                        text: 'Defence as % of Government Expenditure (Top 10)',
                         font: { size: 16 }
                     }
                 }
@@ -707,7 +707,7 @@
                     y: {
                         title: {
                             display: true,
-                            text: 'Defense Spending (Billions USD)'
+                            text: 'Defence Spending (Billions USD)'
                         }
                     }
                 }
@@ -755,7 +755,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'Regional Defense Burden (% of GDP)',
+                                text: 'Regional Defence Burden (% of GDP)',
                                 font: { size: 16 }
                             }
                         }
@@ -767,7 +767,7 @@
                     data: {
                         labels: militaryData.regions.names,
                         datasets: [{
-                            label: 'Defense Spending (Billions USD)',
+                            label: 'Defence Spending (Billions USD)',
                             data: militaryData.regions.spending,
                             backgroundColor: [
                                 'rgba(59, 130, 246, 0.8)',
@@ -785,7 +785,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'Regional Defense Spending Distribution (2020)',
+                                text: 'Regional Defence Spending Distribution (2020)',
                                 font: { size: 16 }
                             }
                         }
