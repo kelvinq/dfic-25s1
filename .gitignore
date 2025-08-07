@@ -1,0 +1,5 @@
+# Claude Code context files
+@.claude/
+
+# Google Sheets files
+*.gsheet
